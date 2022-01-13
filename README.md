@@ -13,6 +13,9 @@ Carrera en Coderhouse
         Introducción a Balsamiq y IDEs<br/>
         Introducción a HTML5<br/>
         Introducción a la arquitectura de trabajo<br/>
+        Estructura de pagina web<br/>
+        Contenedores en bloque (semanticas y genericas) y en linea<br/>
+        Etiquetas h1 al h6 y comentarios<br/>
     </td>
   </tr>
 </table>

@@ -8,7 +8,7 @@ Carrera en Coderhouse
     <th>Descripción</th>
   </tr>
     <td>0</td>
-    <td>13/01/2021</td>
+    <td>13/01/2022</td>
     <td>
         Introducción a Balsamiq y IDEs<br/>
         Introducción a HTML5<br/>
@@ -17,5 +17,10 @@ Carrera en Coderhouse
         Contenedores en bloque (semanticas y genericas) y en linea<br/>
         Etiquetas h1 al h6 y comentarios<br/>
     </td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>18/01/2022</td>
+    <td>Prototipado y conceptos básicos de HTML</td>
   </tr>
 </table>

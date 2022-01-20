@@ -23,4 +23,9 @@ Carrera en Coderhouse
     <td>18/01/2022</td>
     <td>Prototipado y conceptos básicos de HTML</td>
   </tr>
+  tr>
+    <td>2</td>
+    <td>20/01/2022</td>
+    <td>Multiples etiquetas HTML</td>
+  </tr>
 </table>

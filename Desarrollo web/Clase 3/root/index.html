@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <!-- Linkeamos archivo css externo -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 
+        Listas ordenadas y listas con viñetas
+        Las listas numericas establecen un orden en la lectura de sus items
+        Las listas de viñetas no representan ningun orden o importancia en sus items.
+        <ol> lista ordenadas (numericas)
+        <ul> lista sin orden (viñetas) 
+        <li> articulo de la lista
+    -->
+
+    <!-- Inicio encabezado  -->
+    <header>
+        <!-- LOGO -->
+        <div>
+            <img width="150" src="/Desarrollo web/Clase 2/root/assets/img/betta-1.png" alt="logo">
+        </div>
+        <!-- cierre logo -->
+        <!-- inicio nav -->
+        <nav>
+            <!-- lista con viñetas -->
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="views/productos.html">PRODUCTOS</a>
+                    <ol>
+                        <li>REMOTO
+                            <ul>
+                                <li>index</li>
+                                <li>index</li>
+                            </ul>
+                        </li>
+                        <li>PRESENCIAL</li>
+                    </ol>
+                </li>
+                <li><a href="views/contacto.html">CONTACT</a></li>
+            </ul>
+            <!-- cierre viñetas -->
+        </nav>
+        <!-- cierre nav -->
+    </header>
+    <!-- cierre encabezado -->
+    <!-- inicio contenido -->
+    <main>
+        <!-- lista ordenada -->
+        <ol>
+            <li>Element A
+                <ul>
+                    <li>Element 1</li>
+                    <li>Element 2</li>
+                </ul>
+            </li>
+            <li>Element B</li>
+            <li>Element C</li>
+        </ol>
+        <!-- cierre ordenada -->
+        <div class="bg-blue">
+            <h3>Video con Iframe</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9itEtlrTKS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <section class="noticia-principal">
+            <article>
+                <h3 id="encabezado">Noticia 1</h3>
+                <p class=noticia--parrafo id="noticia__parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum similique nesciunt sapiente consequatur necessitatibus esse dolorum est reprehenderit. Maiores veniam voluptatum fugiat aut dolores suscipit placeat aliquid rem cum eveniet.</p>
+            </article>
+        </section>
+        <section class="noticia-secundaria">
+            <article>
+                <h3>Noticia 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, veniam maxime, inventore hic vel repudiandae laboriosam ea non reiciendis, autem facere nemo minus quos? Quas voluptatibus earum sunt esse quidem?</p>
+            </article>
+        </section>
+    </main>
+    <!-- cierre contenido -->
+    <!-- inicio footer -->
+    <footer class="bg-blue">
+        <!-- LOGO -->
+        <img width="150" src="/Desarrollo web/Clase 2/root/assets/img/betta-red.png" alt="betta">
+        <!-- cierre logo -->
+        <!-- Redes sociales -->
+        <div>
+            <h3>REDES SOCIALES</h3>
+            <img width="50" src="/Desarrollo web/Clase 2/root/assets/img/betta-2.png" alt="redes">
+            <img width="50" src="/Desarrollo web/Clase 2/root/assets/img/betta-2.png" alt="redes">
+        </div>
+        <!-- Contacto -->
+        <div>
+            <h3>CONTACTO</h3>
+        </div>
+    </footer>
+    <!-- cierre footer -->
+</body>
+</html>

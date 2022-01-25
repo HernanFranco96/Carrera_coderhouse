@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+/*** Selectora de etiqueta
+section article h3 {
+    color: green;
+} 
+**/
+
+/* RESET O NORMALICE */
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Añadiendo especificidad con el uso de clases */
+/* Para seleccionar una clase necesitamos anteponer un punto (.) y nombre de la clase */
+.noticia-principal article h3{
+    color: orange;
+}
+section.noticia-principal{
+    color: blueviolet;
+}
+.bg-blue{
+    background-color: blue;
+}
+/* Para seleccionar un ID necesitamos anteponer un (#) y nombre del ID */
+#encabezado{
+    font-size: 50px;
+    color:red;
+}
+/* Orden de preferencia */
+p{
+    color: blue;
+    font-size: 24px;
+}
+p{
+    color: yellow;
+    text-align: center;
+}
+/* El selector de clase tiene mas poder que el de etiqueta */
+.noticia--parrafo{
+    /* important supera el rango de preferencia */
+    color: green!important; 
+}
+/* El selector de ID tiene mas poder que el de clase */
+#noticia__parrafo{
+    color: indianred;
+}
+/* Modificar listas */
+li{
+    list-style-type: none;
+}
+/* Modificar enlaces */
+a{
+    color: blue;
+    font-size: 20px;
+    text-decoration: none;
+}
+a:hover{
+    color:yellow;
+}
+/* Agregamos una fuente externa */
+/* @font-face{
+    font-family: fantasy;
+    url: src();
+}    */
+p{
+    /* font-family: ; cambiamos la fuente 
+    font-weight: ; cambiamos el grosos de la fuente
+    font-size: ; cambiamos el tamaño
+    text-align: ; cambia la posicion */
+}
+main{
+    background-image: url('../assets/img/betta-1.png');
+    height: 800px;
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /*  Acomoda el tamaño de la imagen al contenedor */
+}

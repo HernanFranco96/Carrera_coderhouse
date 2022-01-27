@@ -28,9 +28,13 @@ Carrera en Coderhouse
     <td>20/01/2022</td>
     <td>Multiples etiquetas HTML</td>
   </tr>
-    <tr>
     <td>3</td>
     <td>25/01/2022</td>
     <td>Incluyendo css a nuestro trabajo</td>
+  </tr>
+  </tr>
+    <td>4</td>
+    <td>27/01/2022</td>
+    <td>Box Modeling</td>
   </tr>
 </table>

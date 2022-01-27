@@ -1,0 +1,49 @@
+.header__logo__img{
+    width: 150px;
+    height: auto;
+}
+.nav--background{
+    background-color: coral;
+}
+.nav__item{
+    display: inline;
+}
+.nav__item--background{
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+}
+.card{
+    margin: 50px;
+    border: 1px solid #000;
+}
+.noticia{
+    border: 1px solid #000;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin-bottom: 20PX;
+}
+.footer__logo{
+    width: 150px;
+    height: auto;
+}
+.fixed__img{
+    /* position sticky, pegajoso, queda pegado a un borde */
+    /* position fixed, queda fijo a cierta posicion de altura */
+    /* position relative, cuando movilizamos un elemento, no se rompe el flujo del html. Osea el quitamos un elemento, otro elemento no ocupara su lugar */
+    /* position absulote, si rompe el flujo de html, y cuando queda espacio es ocupado por un elemento */
+    position: fixed;
+    width: 500px;
+    top: 50px;
+}
+.cuadrado{
+    background-color: yellow;
+    border: 1px solid black;
+    margin: 0 10px;
+}
+.c2{
+    position: absolute;
+    bottom: 100px;
+}

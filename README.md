@@ -37,4 +37,9 @@ Carrera en Coderhouse
     <td>27/01/2022</td>
     <td>Box Modeling</td>
   </tr>
+  </tr>
+    <td>5</td>
+    <td>01/02/2022</td>
+    <td>Flexbox</td>
+  </tr>
 </table>

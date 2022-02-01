@@ -8,7 +8,7 @@ body{
     background-image: url('../assets/img/Fondo/fondo-agua.jpg');
 }
 .contenedor{
-    background: rgba(129, 212, 250, 0.5);
+    background-color: rgba(129, 212, 250, 0.4);
     box-shadow: 4px 4px 5px #6c757d;
     width: 1700px;
     height: auto;

@@ -1,0 +1,35 @@
+body{
+    overflow: hidden;
+}
+.img-fondo{
+    background-image: url('https://1.bp.blogspot.com/-0kt6ekXtQrA/VQzbzppVR-I/AAAAAAACi6U/-8DXV8UxDKs/s1600/Atardecer%2Ben%2Bla%2Bplaya.jpg');
+    height: 400px;
+}
+.titulo-fondo{
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+    /* position: relative; */
+}
+.logo{
+    width: 100px;
+    position: relative;
+    z-index: 100;
+}
+nav{
+    background-color: lightgrey;
+    width: 500px;
+    padding: 20px;
+    position: relative;
+    bottom: 50px;
+    left: 30px;
+    overflow: hidden;
+}
+li{
+    display: inline;
+    padding: 20px;
+}
+a{
+    color:blue;
+    text-decoration: none;
+}

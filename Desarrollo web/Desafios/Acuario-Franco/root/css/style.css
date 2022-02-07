@@ -157,7 +157,8 @@ body{
     transition: all 0.5s;
 }
 .productos .productos__producto img:hover{
-    transform: scale(1.5) translate(0%, 10%);
+    /* transform: scale(1.5) translate(0%, 10%); */
+    transform: scale3d(1.5, 1.5, 0.2);
     position: relative;
 }
 .productos .productos__producto p{

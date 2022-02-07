@@ -42,4 +42,9 @@ Carrera en Coderhouse
     <td>01/02/2022</td>
     <td>Flexbox</td>
   </tr>
+  </tr>
+    <td>6</td>
+    <td>03/02/2022</td>
+    <td>GRIDS</td>
+  </tr>
 </table>

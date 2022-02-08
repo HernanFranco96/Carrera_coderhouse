@@ -47,4 +47,9 @@ Carrera en Coderhouse
     <td>03/02/2022</td>
     <td>GRIDS</td>
   </tr>
+  </tr>
+    <td>7</td>
+    <td>08/02/2022</td>
+    <td>GRIDS 2 y Media querie</td>
+  </tr>
 </table>

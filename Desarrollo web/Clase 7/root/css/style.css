@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.grid{
+    display: grid;
+    /* Trabajar entre el 99% o 100% del width */
+    grid-template-columns: 30% 70%;
+    /* Altura de la row */
+    grid-template-rows: 200px 400px;
+    /* Margin entre elementos */
+    grid-column-gap: 20px; /* Agrega un espacio en px entre columnas*/
+    grid-row-gap: 20px; /* Agrega un espacio en px entre filas */
+}
+.grid div{
+    background-color: lightpink;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+}
+
+/********************************SERVICIOS**************************************/
+.contenedor-padre-servicios{
+    display: grid;
+    grid-template-areas: 
+    "navIzq navIzq logo logo navDer navDer"
+    "encabezado encabezado encabezado encabezado encabezado encabezado"
+    "txtIzq txtIzq txtIzq txtDer txtDer txtDer"
+    "footer footer footer footer footer footer";
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto auto auto;
+}
+.navIzq{
+    grid-area: navIzq;
+}
+.navDer{
+    grid-area: navDer;
+}
+.logo{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+}
+.encabezadoPrincipal{
+    grid-area: encabezado;
+    text-align: center;
+}
+footer{
+    background-color: lightslategray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+}
+.txtIzq{
+    grid-area: txtIzq;
+}
+.txtDer{
+    grid-area: txtDer;
+}
+.logoEncabezado{
+    width: 100px;
+}
+.img-texto{
+    width: 100%;
+    height: auto;
+}
+p{
+    padding: 30px;
+}
+li{
+    list-style-type: none;
+    padding: 20px
+}
+a{
+    text-decoration: none;
+}
+/************************************INDEX**********************************/
+.border{
+    border: 1px solid black;
+}
+.contenedor-padre{
+
+    display: grid;
+    /* Cada una es una row */
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 500px auto;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+
+img{ width: 300px;}
+ul{
+    display: flex;
+    justify-content: center;
+}
+/**********************************************************************/
+/* MEDIA QUERIE MOBILE */
+@media only screen and (max-width: 768px){
+    body{
+        background-color: lightblue;
+    }
+    h1{
+        display: none;
+    }
+    .contenedor-padre-servicios{
+        display: grid;
+        grid-template-areas: 
+        "logo logo"
+        "navIzq NavDer"
+        "encabezado encabezado"
+        "txtDer txtDer"
+        "txtIzq txtIzq"
+        "footer footer";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+    .navIzq{
+        grid-area: navIzq;
+    }
+    .navDer{
+        grid-area: navDer;
+    }
+    .logo{
+        grid-area: logo;
+    }
+    .encabezadoPrincipal{
+        grid-area: encabezado;
+        text-align: center;
+    }
+    footer{
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+    }
+    .txtIzq{
+        grid-area: txtIzq;
+    }
+    .txtDer{
+        grid-area: txtDer;
+    }
+    .logoEncabezado{
+        width: 100px;
+    }
+    .img-texto{
+        width: 100%;
+        height: auto;
+    }
+    p{
+        padding: 30px;
+    }
+    li{
+        list-style-type: none;
+        padding: 20px
+    }
+    a{
+        text-decoration: none;
+    }
+    
+    .contenedor-padre-contacto{
+        display: grid;
+        grid-template-areas:
+        "navIzq navIzq logo logo NavDer navDer"
+        "encabezado encabezado encabezado encabezado encabezado encabezado"
+        "form form form imgDer imgDer imgDer"
+        "footer footer footer footer footer footer";
+    }
+    .form{
+        grid-area: form;
+    }
+    .imgDer{
+        grid-area: imgDer;
+    }
+}
+/* MEDIA QUERIE TABLET */
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+    body{
+        background-color: lightgreen;
+    }
+    .contenedor-padre-servicios{
+        display: grid;
+        grid-template-areas: 
+        "navIzq navIzq logo logo navDer navDer"
+        "encabezado encabezado encabezado encabezado encabezado encabezado"
+        "txtIzq txtIzq txtIzq txtDer txtDer txtDer"
+        "footer footer footer footer footer footer";
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto auto auto auto;
+    }
+    .navIzq{
+        grid-area: navIzq;
+    }
+    .navDer{
+        grid-area: navDer;
+    }
+    .logo{
+        grid-area: logo;
+    }
+    .encabezadoPrincipal{
+        grid-area: encabezado;
+        text-align: center;
+    }
+    footer{
+        width: 100%;
+        background-color: lightslategray;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        grid-area: footer;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+/* MEDIA QUERIE DESKTOP */
+@media only screen and (min-width: 1024px){
+    body{
+        background-color: lightsalmon;
+    }
+    .contenedor-padre-servicios{
+        display: grid;
+        grid-template-areas: 
+        "navIzq navIzq logo logo navDer navDer"
+        "encabezado encabezado encabezado encabezado encabezado encabezado"
+        "txtIzq txtIzq txtIzq txtDer txtDer txtDer"
+        "footer footer footer footer footer footer";
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto auto auto auto;
+    }
+    .navIzq{
+        grid-area: navIzq;
+    }
+    .navDer{
+        grid-area: navDer;
+    }
+    .logo{
+        grid-area: logo;
+        display: flex;
+        justify-content: center;
+    }
+    .encabezadoPrincipal{
+        grid-area: encabezado;
+        text-align: center;
+    }
+    footer{
+        background-color: lightslategray;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        grid-area: footer;
+        display: flex;
+        justify-content: space-between;
+    }
+}

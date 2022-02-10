@@ -52,4 +52,9 @@ Carrera en Coderhouse
     <td>08/02/2022</td>
     <td>GRIDS 2 y Media querie</td>
   </tr>
+  </tr>
+    <td>8</td>
+    <td>10/02/2022</td>
+    <td>Animaciones transformaciones y transiciones</td>
+  </tr>
 </table>

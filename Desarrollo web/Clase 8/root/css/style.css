@@ -1,0 +1,117 @@
+/* 
+    Transiciones
+*/
+.caja{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    font-size: 30px;
+    background-color: lightgreen;
+    transition: all 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* GRADIENTES */
+.caja-1{
+    background-image: linear-gradient(to right,red, green, yellow);
+}
+
+/* TRANSFORMACIONES */
+/*
+    Mover un elemento de lugar (sin position)
+    Escalar el tamaño de un element
+    Voltear y girar elementos
+    Cambiar la perspectiva de un elemento
+
+    transform: translate() cambia la ubicación del objeto
+    Requiere dos numeros y su unidad, separados por una coma::
+        El primero es el desplazamiento horizontal (eje x)
+        El segundo el desplazamiento vertical (eje Y)
+*/
+.caja-2{
+    transform: translate(110%,50%);
+    /* transform: translateX(110%); */
+    /* transform: translateY(50%); */
+}
+
+/* transform: rotate() Se especializan los grados a rotar (maximo 360) */
+.caja-3{
+    transform: rotate(150deg);
+    /* transform: rotateX(350deg); */
+    /* transform: rotateY(50deg); */
+}
+
+/*
+    transform: scale(); cambia la escala del objeto (como si fuese un zoom)
+    Requiere dos numeros separados por coma:    
+        El primero es el ancho (X)
+        El segundo es la altura (Y)
+*/
+.caja-4{
+    transform: translate(300%) scale(2, 3);
+    /* transform:scale(-.2, -.3); -.2 = 0.2 */
+}
+
+/*
+    transform: skew() cambia la forma del elemento de manera diagonal
+*/
+.caja-5{
+    transform: skew(10deg, 20deg);
+}
+
+.caja-6:hover{
+    background-color: lightcoral;
+}
+
+/*
+    ANIMACIONES
+    A diferencia de la transicion, una animaciones un efecto 
+    que se loopea tantas veces como se quiera.
+
+    No depende del cambio de estado (el elemento se animara desde la carga de la web).
+
+    Es una union de dos partes: Por un lado, una linea de tiempo (llamada keyframe)
+    con la informacion de los cambios, por otro, aplicar ese keyframe a un 
+    elemento que sera el que se vera animado.
+*/
+@keyframes animacion {
+    0%{
+        transform: translate(-50px);
+    }
+    25%{
+        transform: translateX(50px);
+    }
+    50%{
+        transform: scale(2,2);
+    }
+    75%{
+        transform: skew(20deg, 20deg);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.caja-7{
+    margin-left: 500px;
+    animation-name: animacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+}
+
+@keyframes aparecerDesaparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.caja-1{
+    animation-name: aparecerDesaparecer;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-duration: 1s;
+}

@@ -50,4 +50,9 @@ Carrera en Coderhouse
     <td>10/02/2022</td>
     <td>Animaciones transformaciones y transiciones</td>
   </tr>
+  </tr>
+    <td>9</td>
+    <td>15/02/2022</td>
+    <td>GRID</td>
+  </tr>
 </table>

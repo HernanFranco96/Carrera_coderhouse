@@ -8,29 +8,29 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="contenedor">
+    <div class="contenedor-padre">
         <!-- HEADER -->
-        <header class="header">
-            <div class="header__logo">
-                <img class="logo__img__acuario" src="../assets/img/Productos/betta/betta-1.png" alt="logo">
+        <header class="header flexbox">
+            <div class="header__logo flexbox">
+                <img class="logo__acuario" src="../assets/img/Productos/betta/betta-1.png" alt="logo">
                 <h1 class="logo__titulo">Acuario Don Diego</h1>
             </div>
-            <nav class="header__nav">
-                <ul>
-                    <li class="nav__item"><a href="../index.html">Inicio</a></li>
-                    <li class="nav__item"><a id="actual" href="#">Producto</a></li>
-                    <li class="nav__item"><a href="galeria.html">Galeria</a></li>
-                    <li class="nav__item"><a href="nosotros.html">Nosotros</a></li>
-                    <li class="nav__item"><a href="contacto.html">Contacto</a></li>
+            <nav class="header__nav flexbox">
+                <ul class="nav__list flexbox">
+                    <li class="list__item"><a href="../index.html">Inicio</a></li>
+                    <li class="list__item"><a id="actual" href="../views/producto.html">Producto</a></li>
+                    <li class="list__item"><a href="../views/galeria.html">Galeria</a></li>
+                    <li class="list__item"><a href="../views/nosotros.html">Nosotros</a></li>
+                    <li class="list__item"><a href="../views/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>
         <!-- MAIN -->
-        <main class="main">
-            <section class="productos">
+        <main class="main flexbox">
+            <section class="productos flexbox">
                 <div class="sub-menu">
                     <nav class="sub-menu__nav">
-                        <ul>
+                        <ul class="sub-menu__nav__list flexbox">
                             <li class="nav__item"><a id="actual" href="#">Peces</a></li>
                             <li class="nav__item"><a href="#">Peceras</a></li>
                             <li class="nav__item"><a href="#">Accesorios</a></li>
@@ -39,44 +39,46 @@
                     </nav>
                 </div>  
 
-                <article class="productos__producto">
-                    <img src="../assets/img/Productos/betta/betta-1.png" alt="pez">
-                    <h3>Descripción</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <button class="btn">COMPRAR</button>
-                </article>
-                <article class="productos__producto">
-                    <img src="../assets/img/Productos/betta/betta-2.png" alt="pez">
-                    <h3>Descripción</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <button class="btn">COMPRAR</button>
-                </article>
-                <article class="productos__producto">
-                    <img src="../assets/img/Productos/betta/betta-red.png" alt="pez">
-                    <h3>Descripción</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <button class="btn">COMPRAR</button>
-                </article>
-                <article class="productos__producto">
-                    <img src="../assets/img/Productos/betta/betta-red.png" alt="pez">
-                    <h3>Descripción</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <button class="btn">COMPRAR</button>
-                </article>
-                <article class="productos__producto">
-                    <img src="../assets/img/Productos/betta/betta-1.png" alt="pez">
-                    <h3>Descripción</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <button class="btn">COMPRAR</button>
-                </article>
-                <article class="productos__producto">
-                    <img src="../assets/img/Productos/betta/betta-2.png" alt="pez">
-                    <h3>Descripción</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <button class="btn">COMPRAR</button>
-                </article>
+                <div class="articulos flexbox">
+                    <article class="producto">
+                        <img src="../assets/img/Productos/betta/betta-1.png" alt="pez">
+                        <h3>Descripción</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn">COMPRAR</button>
+                    </article>
+                    <article class="producto">
+                        <img src="../assets/img/Productos/betta/betta-2.png" alt="pez">
+                        <h3>Descripción</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn">COMPRAR</button>
+                    </article>
+                    <article class="producto">
+                        <img src="../assets/img/Productos/betta/betta-red.png" alt="pez">
+                        <h3>Descripción</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn">COMPRAR</button>
+                    </article>
+                    <article class="producto">
+                        <img src="../assets/img/Productos/betta/betta-red.png" alt="pez">
+                        <h3>Descripción</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn">COMPRAR</button>
+                    </article>
+                    <article class="producto">
+                        <img src="../assets/img/Productos/betta/betta-1.png" alt="pez">
+                        <h3>Descripción</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn">COMPRAR</button>
+                    </article>
+                    <article class="producto">
+                        <img src="../assets/img/Productos/betta/betta-2.png" alt="pez">
+                        <h3>Descripción</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn">COMPRAR</button>
+                    </article>
+                </div>
             </section>
-            <aside class="aside">
+            <aside class="aside flexbox">
                 <div>
                     <h3 class="aside__publicidad__titulo">Publicidad</h3>
                 </div>
@@ -89,11 +91,11 @@
             </aside>
         </main>
         <!-- FOOTER -->
-        <footer class="footer">
-            <div class="footer__copyright">
+        <footer class="footer flexbox">
+            <div class="footer__copyright flexbox">
                 <p>&copy; 2022 Hernán Franco</p>
             </div>
-            <div class="footer__logos">
+            <div class="footer__logos flexbox">
                 <a href="#" target="__blank"><img class="footer__logos__img" src="../assets/img/logos/whatsapp.png" alt="whatsapp"></a>
                 <a href="#" target="__blank"><img class="footer__logos__img" src="../assets/img/logos/instagram.png" alt="instagram"></a>
                 <a href="#" target="__blank"><img class="footer__logos__img" src="../assets/img/logos/facebook.png" alt="facebook"></a>

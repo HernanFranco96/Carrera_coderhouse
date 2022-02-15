@@ -53,6 +53,6 @@ Carrera en Coderhouse
   </tr>
     <td>9</td>
     <td>15/02/2022</td>
-    <td>GRID</td>
+    <td>GIT</td>
   </tr>
 </table>

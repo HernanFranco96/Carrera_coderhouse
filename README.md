@@ -55,4 +55,9 @@
     <td>15/02/2022</td>
     <td>GIT</td>
   </tr>
+  </tr>
+    <td>10</td>
+    <td>17/02/2022</td>
+    <td>GITHUB</td>
+  </tr>
 </table>

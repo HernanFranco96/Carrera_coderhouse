@@ -65,4 +65,9 @@
     <td>22/02/2022</td>
     <td>Bootstrap</td>
   </tr>
+  </tr>
+    <td>12</td>
+    <td>24/02/2022</td>
+    <td>@media + Pseudoclases</td>
+  </tr>
 </table>

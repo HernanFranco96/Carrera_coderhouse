@@ -70,4 +70,9 @@
     <td>24/02/2022</td>
     <td>@media + Pseudoclases</td>
   </tr>
+  </tr>
+    <td>13</td>
+    <td>03/03/2022</td>
+    <td>SASS, nodejs y npm</td>
+  </tr>
 </table>

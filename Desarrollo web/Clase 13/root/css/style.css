@@ -1,0 +1,22 @@
+nav {
+  background-color: lightBlue; }
+  nav ul {
+    display: flex; }
+    nav ul li {
+      list-style-type: none; }
+      nav ul li a {
+        color: lightcoral;
+        font-size: 50px; }
+        nav ul li a:hover {
+          color: darkred; }
+
+body {
+  background-color: #7db478; }
+  body .encabezado {
+    padding: 20px;
+    font-size: 50px;
+    font-family: "comic sans ms";
+    font-weight: bold; }
+    @media only screen and (max-width: 750px) {
+      body .encabezado {
+        background-color: green; } }

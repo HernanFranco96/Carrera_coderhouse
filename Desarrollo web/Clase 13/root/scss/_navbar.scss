@@ -1,0 +1,17 @@
+// @use 'colores';
+nav{
+    background-color: $bgPrimario;
+    ul{
+        display: flex;
+        li{
+            list-style-type: none;
+            a{
+                color: lightcoral;
+                font-size: 50px;
+                &:hover{
+                    color: darkred;
+                }
+            }
+        }
+    }
+}

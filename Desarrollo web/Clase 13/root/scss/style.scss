@@ -1,0 +1,12 @@
+// Variables en CSS
+// :root{
+//     --colorGris: #646464;
+// }
+// h1{
+//     color: var(--colorGris);
+// }
+
+@import 'colores'; // Variables siempre primero
+@import 'navbar';
+@import 'footer';
+@import 'root';

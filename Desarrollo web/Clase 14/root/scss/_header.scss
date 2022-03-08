@@ -1,0 +1,103 @@
+$full-ancho: 100%;
+$ancho-imagen: 50px;
+
+$i: 1;
+
+// Variable estatica
+$dispositivo: desktop;
+
+header{
+    width: $full-ancho/2; // Operación de división
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: $ancho-imagen*2; // Operación de multiplicación
+    }
+    nav{
+        ul{
+            display: flex;
+            li{
+                list-style-type: none;
+                background-color: lightpink;
+                border: 1px solid black;
+                a{
+                    text-decoration: none;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
+
+// BUBLE EACH
+@each $color in blue, yellow, black{
+    .font-#{$color}{
+        color: #{$color}
+    }
+}
+
+// BUBLE FOR
+@for $i from 1 through 10{
+    .col-#{$i}{
+        width: 10% * $i;
+        padding: 5px * $i;
+
+        background-color: lightseagreen;
+    }
+}
+
+// MAPS 
+// Son variables cuyo valor es una colección de variables
+// clave: valor
+$redes: (
+    twitter: #55acee, 
+    facebook: #3a5795, 
+    send-mail: #c25e30
+);
+
+// Creamos un buble para usar los valores del maps
+@each $clave, $valor in $redes{
+    .#{$clave}{
+        color: $valor;
+    }
+}
+
+$estilos: (
+    color: red,
+    centro: center,
+    tFuente: 35px,
+    pTop: 10px
+);
+
+div{
+    color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+    font-size: map-get($estilos, tFuente);
+    padding-top: map-get($estilos, pTop);
+}
+
+body{
+    // CONDICIONALES
+    @if $dispositivo == mobile{
+        @media only screen and (max-width: 768px){
+            a{
+                font-size: 50px;
+                background-color: red;
+            }
+        }
+    }@else if $dispositivo == desktop{
+        @media only screen and (max-width: 1024px){
+            a{
+                font-size: 80px;
+                background-color: blue;
+            }
+        }
+    }@else{
+        a{
+            font-size: 20px;
+            background-color: green;
+        }
+    }
+}

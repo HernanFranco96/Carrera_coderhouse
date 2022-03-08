@@ -1,0 +1,20 @@
+
+// MIXINS CON PARAMETROS
+@mixin cubo($width, $height){
+    width: $width;
+    height: $height;
+}
+
+.cubo{
+    @include cubo(100px, 100px);
+}
+
+//MIXINS SIN PARAMETRO
+@mixin color{
+    color: #fff;
+    background-color: black;
+}
+
+.cubo-color{
+    @include color;
+}

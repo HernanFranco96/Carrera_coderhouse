@@ -1,0 +1,31 @@
+
+// EXTEND 
+// A menudo, al diseñar una pagina una clase debe tener todos los estilos de otra clase
+// asi como sus propios estilos especificos. En esos casos usamos @extend, para traer 
+// los estilos de otra clase.
+
+
+// CLASE BASE
+.boton{
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    color: black;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer
+}
+
+// ENTENDER CLASE BASE
+.boton-aceptar{
+    @extend .boton;
+    background-color: lightgreen;
+    color: #fff;
+}
+
+.boton-cancelar{
+    @extend .boton;
+    background-color: lightcoral;
+    color: #fff;
+}

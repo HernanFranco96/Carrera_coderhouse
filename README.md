@@ -80,4 +80,9 @@
     <td>08/03/2022</td>
     <td>SASS II - OPERACIONES, BUCLES, EXTEND Y MIXINS</td>
   </tr>
+  </tr>
+    <td>15</td>
+    <td>10/03/2022</td>
+    <td>SERVIDORES Y SEO</td>
+  </tr>
 </table>

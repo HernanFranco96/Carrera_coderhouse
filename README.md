@@ -85,4 +85,9 @@
     <td>10/03/2022</td>
     <td>SERVIDORES Y SEO</td>
   </tr>
+  </tr>
+    <td>16</td>
+    <td>10/03/2022</td>
+    <td>Subida al servidor 000webhost usando Filezilla</td>
+  </tr>
 </table>

@@ -90,4 +90,15 @@
     <td>10/03/2022</td>
     <td>Subida al servidor 000webhost usando Filezilla</td>
   </tr>
+  </tr>
+    <td>17</td>
+    <td>17/03/2022</td>
+    <td>Conociendo al cliente</td>
+  </tr>
+  </tr>
+    <td>18</td>
+    <td>22/03/2022</td>
+    <td>Entrega del proyecto final</td>
+  </tr>
 </table>
+<h1>JavaScript</h1>

@@ -102,3 +102,8 @@
   </tr>
 </table>
 <h1>JavaScript</h1>
+  </tr>
+    <td>1</td>
+    <td>24/03/2022</td>
+    <td>Nivelación</td>
+  </tr>

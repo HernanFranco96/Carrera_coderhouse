@@ -102,8 +102,15 @@
   </tr>
 </table>
 <h1>JavaScript</h1>
+<table>
   </tr>
-    <td>1</td>
+    <td>0</td>
     <td>24/03/2022</td>
     <td>Nivelación</td>
   </tr>
+  </tr>
+    <td>1</td>
+    <td>29/03/2022</td>
+    <td>Conceptos generales: sintaxis y variables</td>
+  </tr>
+</table>

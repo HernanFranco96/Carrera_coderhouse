@@ -32,7 +32,9 @@
     decimal: 10.5
 */
 
+// Convierte un string a numero entero
 let numero1 = parseInt(prompt('Ingrese numero entero: '));
+// Convierte un string a numero decimal
 let numero2 = parseFloat(prompt('Ingrese numero decimal: '));
 
 let resultado = numero1 + numero2;

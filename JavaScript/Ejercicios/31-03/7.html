@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Escriba un programa en donde se le pida al usuario ingresar el lugar a donde quiera
+    viajar. Teniendo en cuenta estos valores:
+    - Colombia: $40
+    - México: $50
+    - Brasil: $30
+    - Uruguay: $20
+    - Chile: $20
+    - Ecuador: $30
+    - Perú: $40
+    - Estados Unidos: $50
+    Mostrarle al usuario cuál sería el costo de viajar al lugar que escribió.
+    NOTA: Tener en cuenta las mayúsculas y minúsculas al momento de ingresar el
+    nombre del lugar -->
+    <script>
+        let precioColombia = 40;
+        let precioMexico = 50;
+        let precioBrasil = 30;
+        let precioUruguay = 20;
+        let precioChile = 20;
+        let precioEcuador = 30;
+        let precioPuru = 40;
+        let precioUsa = 50;
+
+        let viaje = prompt(`\n[1] Colombia\n[2] Mexico\n[3] Brasil\n[4] Uruguay\n[5] Chile\n[6] Ecuador\n[7] Peru\n[8] USA \nPor favor elija su viaje: `);
+
+        if(viaje == 'Colombia' || viaje == 'colombia'){
+            alert(`El costo de viaje a ${viaje} es ${precioColombia}`);
+        }
+        else if(viaje == 'Mexico' || viaje == 'mexico'){
+            alert(`El costo de viaje a ${viaje} es $${precioMexico}`);
+        }
+        else if(viaje == 'Brasil' || viaje == 'brasil'){
+            alert(`El costo de viaje a ${viaje} es $${precioBrasil}`);
+        }
+        else if(viaje == 'Uruguay' || viaje == 'uruguay'){
+            alert(`El costo de viaje a ${viaje} es $${precioUruguay}`);
+        }
+        else if(viaje == 'Chile' || viaje == 'chile'){
+            alert(`El costo de viaje a ${viaje} es $${precioChile}`);
+        }
+        else if(viaje == 'Ecuador' || viaje == 'ecuador'){
+            alert(`El costo de viaje a ${viaje} es $${precioEcuador}`);
+        }
+        else if(viaje == 'Peru' || viaje == 'peru'){
+            alert(`El costo de viaje a ${viaje} es $${precioPuru}`);
+        }
+        else if(viaje == 'Usa' || viaje == 'usa'){
+            alert(`El costo de viaje a ${viaje} es $${precioUsa}`);
+        }
+        else{
+            alert('No hay vuelos hacia el viaje ingresado.');
+        }
+    </script>
+</body>
+</html>

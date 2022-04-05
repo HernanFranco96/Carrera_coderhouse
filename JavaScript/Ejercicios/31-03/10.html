@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Escriba un programa en donde se le solicite al usuario que ingrese 2 números y le
+    muestre en pantalla un mensaje cuando su suma de 10 y su división tenga como
+    resto 0 -->
+    <script>
+        let a = parseInt(prompt('Ingrese el primer numero: '));
+        let b = parseInt(prompt('Ingrese el segundo numero: '));
+        let suma = a + b;
+        let resto = suma % 2;
+
+        if(suma == 10 && resto == 0){
+            console.log('La suma es igual a 10 y su resto es 0');
+        }
+    </script>
+</body>
+</html>

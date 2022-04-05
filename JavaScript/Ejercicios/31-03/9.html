@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Escriba un programa en donde se le pida un nombre y una edad al usuario.-->
+    <script>
+        let nombre = prompt('Ingrese nombre: ');
+        let edad = parseInt(prompt('Ingrese edad: '));
+        if(edad > 24){
+            console.log(`El nombre es ${nombre} y tiene mas de 24 años`);
+            if(edad >= 28 && edad <= 35){
+                console.log(`El nombre es ${nombre} y tiene entre 28 y 35 años`);
+            }
+        }
+    </script>
+</body>
+</html>

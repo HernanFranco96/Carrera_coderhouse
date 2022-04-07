@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <!-- 
+        Realizar un programa donde se le pida al usuario ingresar un número positivo y
+        luego mostrar en pantalla el conteo hacia atrás hasta llegar a 0.
+        NOTA: Tener en cuenta validar que es un número positivo el que ingresó.
+    -->
+
+    <script>
+        let i;
+        let numero = parseInt(prompt('Ingrese numero positivo: '));
+        if(numero > 0){
+            console.log('Comienzo de conteo: ')
+            for(i = numero;i >= 0;i--){
+                console.log('Numero: ' + i);
+            }
+        }else{
+            alert('No es un numero positivo.');
+        }
+    </script>
+</body>
+</html>

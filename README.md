@@ -118,4 +118,14 @@
     <td>31/03/2022</td>
     <td>Control de flujo</td>
   </tr>
+  </tr>
+    <td>3</td>
+    <td>5/03/2022</td>
+    <td>Bucles</td>
+  </tr>
+  </tr>
+    <td>4</td>
+    <td>7/04/2022</td>
+    <td>Funciones</td>
+  </tr>
 </table>

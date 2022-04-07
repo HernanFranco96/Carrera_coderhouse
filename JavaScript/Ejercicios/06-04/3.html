@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <!-- 
+        Pedirle al usuario que ingrese un número, realizar un conteo hacia atrás hasta llegar
+        a 0 pero sólo mostrando los números que son pares.
+    -->
+    <script>
+        let i;
+        let numero = parseInt(prompt('Ingrese numero positivo: '));
+        if(numero > 0){
+            console.log('Comienzo de conteo: ')
+            for(i = numero;i >= 0;i--){
+                if(i % 2 == 0){
+                    console.log('Numero: ' + i);
+                }
+            }
+        }else{
+            alert('No es un numero positivo.');
+        }
+    </script>
+</body>
+</html>

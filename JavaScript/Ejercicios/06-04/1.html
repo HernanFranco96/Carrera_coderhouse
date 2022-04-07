@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercio 1</title>
+</head>
+<body>
+    <!-- 
+    Realizar un programa que le pida al usuario cadenas de texto hasta que ingrese
+    “Salir”. Una vez que sale, mostrarle en un alert los textos ingresados separados por
+    una coma (,). 
+    -->
+
+    <script>
+        let text = "";
+        let oracion = "";
+        let index = true;
+
+        do{
+            text = prompt('Ingrese una palabra: ');
+            if(text != 'Salir')
+                oracion += text + ", ";
+            else
+                index = false;
+                
+        }while(index)
+
+        alert(oracion);
+    </script>
+</body>
+</html>

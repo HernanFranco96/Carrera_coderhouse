@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <!-- 
+        Realice un programa que dados dos números, muestre todos los números que están
+        en medio de ambos. (Ej: Ingreso 2 y 6, me tiene que mostrar 3, 4 y 5).
+    -->
+<script>
+    let x = parseInt(prompt('Ingrese el primer numero: '));
+    let y = parseInt(prompt('Ingrese el segundo numero: '));
+    let i = 0;
+    let index = true;
+    let acumulador = 0;
+
+    while(index){
+        if(x>y){
+            acumulador += y + " ";
+            y++;
+            if(x==y){
+                index = false;
+            }
+        }
+        else if(y>x){
+            acumulador += x + " ";
+            x++;
+            if(y==x){
+                index = false;
+            }
+        }
+        else{
+            console.log('Son iguales.');
+        }
+        i++;
+    }
+
+    console.log(acumulador);
+
+</script>
+</body>
+</html>

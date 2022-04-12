@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+</head>
+<body>
+    <!-- 
+        Realizar un programa que le pida al usuario cuántos números quiere ingresar y entre
+        todos los que ingrese calcular cual es el mayor, el menor y la media.
+    -->
+<script>
+    let cantidad = parseInt(prompt('Ingrese la cantidad de numero que desea ingresar: '));
+    let mayor = 0;
+    let menor = 0;
+    let medio = 0;
+    let numero = 0;
+    let index = true;
+    let i = 0;
+
+    if(cantidad > 0){
+        while(i < cantidad)
+        {
+            numero = parseInt(prompt('Ingrese un numero: '));
+            if(index){
+                mayor = numero;
+                menor = numero;
+                medio = numero;
+                index = false;
+            }
+            if(mayor < numero){
+                mayor = numero;
+            }
+            else if(medio > menor && medio < mayor){
+                medio = numero;
+            }
+            else if(menor > numero){
+                menor = numero;
+            }
+        
+            i++;
+        }
+    }
+
+
+    console.log(`Ingreso un total de ${cantidad} numeros.\nEl mayor numero es: ${mayor}\nEl numero del medio es: ${medio}\nEl menor numero es: ${menor}`);
+</script>
+</body>
+</html>

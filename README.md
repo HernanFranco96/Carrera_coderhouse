@@ -128,4 +128,9 @@
     <td>7/04/2022</td>
     <td>Funciones</td>
   </tr>
+  </tr>
+    <td>8</td>
+    <td>12/04/2022</td>
+    <td>Objetos y Clases</td>
+  </tr>
 </table>

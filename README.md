@@ -133,4 +133,9 @@
     <td>12/04/2022</td>
     <td>Objetos y Clases</td>
   </tr>
+  </tr>
+    <td>9</td>
+    <td>14/04/2022</td>
+    <td>Arrays</td>
+  </tr>
 </table>

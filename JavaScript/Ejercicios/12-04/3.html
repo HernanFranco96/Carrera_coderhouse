@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <!-- Crear una clase llamada Cuenta que contenga los siguientes atributos: titular (que
+    es una persona) y cantidad (que pueden ser decimales). Crear su constructor y tiene
+    que poseer los siguientes métodos:
+    a) mostrar() que muestra los datos de la cuenta
+    b) ingresar(cantidad) ingresa cantidad de dinero a la cuenta (Si la cantidad es
+    negativa no se hace nada)
+    c) retirar(cantidad) se retira una cantidad de la cuenta. -->
+<script>
+    class Cuenta{
+        constructor(titular, cantidad){
+            this.titular = titular;
+            this.cantidad = cantidad;
+        }
+
+        mostrar = () => console.log(`${this.titular} ${this.cantidad}`);
+        ingresar = (x) => {
+            if(x>0){
+                this.cantidad = x;
+            }
+        }
+        retirar = (x) => this.cantidad -= x;
+    }
+
+    let cuenta = new Cuenta('Hernan', 0);
+    cuenta.ingresar(5000);
+    cuenta.retirar(2000);
+    cuenta.mostrar();
+</script>
+</body>
+</html>

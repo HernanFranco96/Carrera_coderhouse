@@ -129,13 +129,19 @@
     <td>Funciones</td>
   </tr>
   </tr>
-    <td>8</td>
+    <td>5</td>
     <td>12/04/2022</td>
     <td>Objetos y Clases</td>
   </tr>
   </tr>
-    <td>9</td>
+    <td>6</td>
     <td>14/04/2022</td>
     <td>Arrays</td>
   </tr>
+  </tr>
+    <td>7</td>
+    <td>19/04/2022</td>
+    <td>Funciones de orden superior</td>
+  </tr>
+ 
 </table>

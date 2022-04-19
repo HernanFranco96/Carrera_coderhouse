@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+</head>
+<body>
+    <!-- Escribir una función que le pida al usuario cadenas de texto hasta que ingrese
+    “Salir”. Al ingresar “Salir” la función tiene que mostrar en pantalla los textos
+    concatenados -->
+<script>
+    let funcCadenas = () => {
+        let cadena = "";
+        let texto = "";
+        while(true){
+            texto = prompt('Ingrese texto: ');
+            if(texto == 'Salir'){
+                return cadena;
+            }
+            cadena += ", " + texto;
+            texto = "";
+        }
+    }
+
+    console.log(funcCadenas());
+</script>
+</body>
+</html>

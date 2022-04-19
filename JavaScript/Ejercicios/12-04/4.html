@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <!-- Crear una clase llamada Calculadora que contenga los siguientes atributos:
+    numero1 y numero2. Crear su constructor y tiene que poseer los siguientes
+    métodos:
+    a) multiplicar() que multiplique los 2 números y devuelva su resultado
+    b) sumar() que sume los 2 números y devuelva su resultado
+    c) restar() que reste los 2 números y devuelva su resultado
+    d) dividir() que divida los 2 números y devuelva su resultado -->
+<script>
+    
+    class Calculadora {
+        constructor(numero1, numero2){
+            this.numero1 = numero1;
+            this.numero2 = numero2;
+        }
+        multiplicar = () => this.numero1 * this.numero2;
+        sumar = () => this.numero1 + this.numero2;
+        restar = () => this.numero1 - this.numero2;
+        dividir = () => this.numero1 / this.numero2;
+    }
+
+    let calculadora = new Calculadora(5,7);
+
+    console.log(calculadora.multiplicar());
+    console.log(calculadora.sumar());
+    console.log(calculadora.restar());
+    console.log(calculadora.dividir());
+</script>
+</body>
+</html>

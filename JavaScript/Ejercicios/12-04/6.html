@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <!-- Crear una clase llamada Cafetera que contenga los atributos: cantidadMaxima
+    (Entero) y cantidadActual (Entero). Crear su constructor y tiene que poseer los
+    siguientes métodos:
+    a) servirTaza() la cual simula la acción de servir una taza. Tiene que descontar
+    en 1 la cantidadActual y validar que no se pueda servir una taza si no hay
+    cantidad suficiente.
+    b) vaciarCafetera() que ponga la cantidadActual en 0
+    c) agregarCafe(cantidad) que sume la cantidad de cafés indicados a la
+    cantidadActual. Validar que no pueda haber más capacidad que la
+    capacidadMaxima.
+    d) llenarCafetera() que ponga en la cantidadActual el valor de cantidadMaxima.
+    Validar que si la cafetera está llena ya, no la pueda llenar otra vez -->
+<script>
+    class Cafetera{
+        constructor(cantidadMaxima, cantidadActual){
+            this.cantidadMaxima = parseInt(cantidadMaxima);
+            this.cantidadActual = parseInt(cantidadActual);
+        }
+        servirTaza = () => {
+            if(this.cantidadActual > 0){
+                return this.cantidadActual = this.cantidadActual - 1;
+            }else{
+                console.log('Actualmente no posee ninguna taza');
+            }
+        }
+        vaciarCafetera = () => this.cantidadActual = 0;
+        agregarCafe = (x) => {
+            let total = this.cantidadActual + x;
+            if(this.cantidadMaxima > total){
+                return this.cantidadActual += x;
+            }
+        }
+        llenarCafetera = () => {
+            if(this.cantidadMaxima == this.cantidadActual)
+                console.log('La cafetera se encuentra llena.');
+            else if(this.cantidadMaxima > this.cantidadActual)
+                return this.cantidadActual = this.cantidadMaxima;
+            
+        }
+    }
+
+    let cafetera = new Cafetera(10, 5);
+    console.log(`Posee un maximo de ${cafetera.cantidadMaxima} tazas y actualmente tiene ${cafetera.cantidadActual}`);
+    console.log(`Al servir una taza le quedan: ${cafetera.servirTaza()}`)
+    console.log(`Agregamos 2 cafes y ahora tiene ${cafetera.agregarCafe(2)}`);
+    console.log(`Vaciamos la cafetera ${cafetera.vaciarCafetera()}`);
+    console.log(`Procedo a llenar la cafetera ${cafetera.llenarCafetera()}`);
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <!-- Crear una clase llamada Cancion que contenga los atributos: titulo y autor. Crear su
+    constructor y tiene que poseer los siguientes métodos:
+    a) mostrarTitulo() que muestre el título de la canción
+    b) mostrarAutor() que muestre el autor de la canción -->
+<script>
+    class Cancion {
+        constructor(titulo, autor){
+            this.titulo = titulo;
+            this.autor = autor;
+        }
+
+        mostrarTitulo = () => console.log(this.titulo)
+        mostrarAutor = () => console.log(this.autor)
+    }
+
+    let cancion = new Cancion('Chico granada', 'Carajo');
+    cancion.mostrarTitulo();
+    cancion.mostrarAutor();
+</script>
+</body>
+</html>

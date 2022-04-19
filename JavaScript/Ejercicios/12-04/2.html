@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <!-- Crear una clase llamada Persona que contenga los atributos: nombre, edad y DNI.
+    Crear su constructor y tiene que poseer 2 métodos:
+    a) mostrar() que muestre los datos de la persona
+    b) esMayor() que devuelva un valor booleano si es mayor de edad o no -->
+<script>
+    class Persona {
+        constructor(nombre, edad, DNI){
+            this.nombre = nombre;
+            this.edad = edad;
+            this.DNI = DNI;
+        }
+
+        mostrar = () => console.log(`${this.nombre} ${this.edad} ${this.DNI}`);
+
+        esMayor = () => {
+            if(this.edad>=18)
+                console.log('Es mayor de edad');
+            else
+                console.log('Es menor de edad');
+        }
+    }
+
+    let persona = new Persona('Hernán', 25, 12345678);
+    persona.mostrar();
+    persona.esMayor();
+</script>
+</body>
+</html>

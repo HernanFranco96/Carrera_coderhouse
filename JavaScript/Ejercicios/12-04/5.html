@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <!-- Crear una clase llamada Libro que contenga los siguientes atributos: título, autor y
+    prestado (booleano). Crear su constructor y tiene que poseer los siguientes
+    métodos:
+    a) prestamo() que preste el libro (poner prestado en true). Si el libro se
+    encuentra prestado, debe mostrar un alert informándolo
+    b) devolver() que devuelva el libro (poner prestado en false). Si el libro no se
+    encuentra prestado, debe mostrar un alert informándolo -->
+<script>
+    class Libro {
+        constructor(titulo, autor, prestado){
+            this.titulo = titulo;
+            this. autor = autor;
+            this.prestado = prestado;
+        }
+
+        prestamo = () => {
+            if(this.prestado == true)
+                alert('El libro se encuentra prestado');
+            else{
+                this.prestado = true;
+                alert('Libro prestado');
+            }
+        }
+        devolver = () => {
+            if(this.prestado == true){
+                this.prestado = false;
+                alert('Libro devuelto');
+            }else
+                alert('El libro no se encuentra prestado');
+        }
+        
+    }
+
+    let libro = new Libro('Las venas abiertas de Latino America', 'Eduardo Galeano', true);
+    libro.prestamo();
+    libro.devolver();
+</script>
+</body>
+</html>

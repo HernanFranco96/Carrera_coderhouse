@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+<body>
+    <!-- Escribir una función que le pida al usuario un número entero entre 1 y 20 y devuelva
+    el número que ingresó. Se necesita validar que el número sea entre 1 y 20, por lo
+    que si el usuario ingresa un número erróneo se le tiene que volver a pedir hasta que
+    ingrese un número correcto. -->
+<script>
+    let func = () => {
+        let x = parseInt(prompt('Ingrese un numero entre [1 - 20]: '));
+        while(x < 1 || x > 20){
+            x = parseInt(prompt('Ingrese nuevamente un numero entre [1 - 20]: '));
+        }
+        return x;
+    }
+
+    console.log(func());
+</script>
+</body>
+</html>

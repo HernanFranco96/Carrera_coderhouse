@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url('../assets/fondo.jpg');
+    background-repeat: repeat;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main{
+    width: 1500px;
+    height: auto;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: rgba(214, 190, 153, 0.9);
+    border-radius: 20px;
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "libros libros precio";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+}
+
+#contenedor-titulo{
+    grid-area: titulo;
+}
+
+#h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contenedor-libros{
+    grid-area: libros;
+}
+
+#contenedor-precio{
+    height: 200px;
+    border: 2px solid black;
+    grid-area: precio;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ul{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+#li{
+    padding: 4px;
+    list-style-type: none;
+    transition: all 0.5s;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#li:hover{
+    /* background-color: rgb(148, 105, 48); */
+    cursor: pointer;
+}
+
+#portada{
+    width: 80px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: all 0.5s;   
+    order: -1;
+}
+
+#precioLibro{
+    order: 2;
+}
+
+#autor{
+    margin-right: 10px;
+    order: 1;
+}
+
+#titulo{
+    margin: auto 10px;
+    order: 0;
+}
+
+#portada:hover{
+    box-shadow: 2px 2px 4px #6c757d;
+}
+
+#h3{
+    order: -2;
+}
+
+#precio{
+    order: -1;
+}
+#precioIva{
+    order: 0;
+}
+#fecha{
+    order: 1;
+}

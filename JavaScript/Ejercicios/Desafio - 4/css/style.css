@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url('../assets/fondo.jpg');
+    background-repeat: repeat;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main{
+    width: 1500px;
+    height: auto;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: rgba(214, 190, 153, 0.9);
+    border-radius: 20px;
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "libros libros precio"
+    "buscar buscar buscar";
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: auto auto;
+}
+
+#contenedor-titulo{
+    grid-area: titulo;
+}
+
+#h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contenedor-libros{
+    grid-area: libros;
+}
+
+#ul-libros{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#ul-libros div{
+    display: flex;
+}
+
+#li{
+    padding: 4px;
+    list-style-type: none;
+    transition: all 0.5s;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#li:hover{
+    cursor: pointer;
+}
+
+#portada{
+    background-color: red;
+    width: 80px;
+    border-radius: 4px;
+    transition: all 0.5s;   
+    order: -1;
+}
+
+#portada:hover{
+    box-shadow: 2px 2px 4px #6c757d;
+}
+
+#portada-comprar{
+    width: 30px;
+    height: 50px;
+}
+
+#contenedor-buscar{
+    grid-area: buscar;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#h3-buscar{
+    margin: 10px auto;
+}
+
+#formulario input, #btn-buscar{
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#btn-buscar:hover{
+    cursor: pointer;
+}
+
+#contenedor-comprar{
+    height: auto;
+    border: 2px solid black;
+    grid-area: precio;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+#h3-comprar{
+    font-size: 25px;
+    order: 0;
+}
+
+#ul-comprar{
+    height: auto;
+}
+
+#ul-buscar{
+    height: 80%;
+    order: 1;
+}
+
+#ul-comprar{
+    order: 2;
+}
+
+#li-comprar{
+    padding: 4px;
+    list-style-type: none;
+    transition: all 0.5s;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#li-comprar p{
+    padding: 5px;
+    font-size: 15px;
+}
+
+#btn-comprar{
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.5s;
+    color: #fff;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(16, 165, 44);
+    order: 3;
+}
+
+#btn-comprar:hover{
+    cursor: pointer;
+    background-color: rgb(40, 138, 58);
+}
+
+#total{
+    font-size: 20px;
+    font-weight: bold;
+}

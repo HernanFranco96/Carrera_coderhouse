@@ -153,4 +153,14 @@
     <td>26/04/2022</td>
     <td>Eventos</td>
   </tr>
+  </tr>
+    <td>10</td>
+    <td>03/05/2022</td>
+    <td>Repaso General</td>
+  </tr>
+  </tr>
+    <td>11</td>
+    <td>05/05/2022</td>
+    <td>Operadores avanzados</td>
+  </tr>
 </table>

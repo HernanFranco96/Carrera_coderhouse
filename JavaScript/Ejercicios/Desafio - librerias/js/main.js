@@ -113,26 +113,30 @@ class Biblioteca {
     }
     /*****************************FECHA****************************/
     fechaCompra = () => {
-        let fecha = new Date();
-        return `${fecha.getDate()}/${fecha.getMonth()}/${fecha.getFullYear()}`;
+        const DateTime = luxon.DateTime;
+        const fecha = DateTime.now();
+        return `${fecha.toLocaleString(DateTime.DATE_FULL)} - ${fecha.toLocaleString(DateTime.TIME_SIMPLE)}hs`; 
     }
     /***************************ALERTAS****************************/
     error = (n) => {
-        let contenedor = document.getElementById('contenedor-titulo');
-        let p = document.createElement('p');
-        p.id = 'alerta-roja';
-        n == 0 && (p.innerText = 'Usted ya ha realizado una compra. Cargue nuevamente la pagina para proceder a otra compra.');
-        n == 1 && (p.innerText = 'Debe hacer click en el titulo del libro.');
-        n == 2 && (p.innerText = 'NO HAY STOCK.');
-        n == 3 && (p.innerText = 'Primero debe seleccionar algun libro para ejecutar su compra.');
-        contenedor.append(p);
+        Swal.fire({
+            title: 'Error!',                
+            icon: 'error',
+            timer: 1000,
+            showConfirmButton: false
+        }).then(() => {
+            n == 0 && Swal.fire({ icon: 'error', confirmButtonText: 'Ok', text: 'Usted ya ha realizado una compra. Cargue nuevamente la pagina para proceder a otra compra.' });
+            n == 1 && Swal.fire({ icon: 'error', confirmButtonText: 'Ok', text: 'Debe hacer click en el titulo del libro.' });
+            n == 2 && Swal.fire({ icon: 'error', confirmButtonText: 'Ok', text: 'NO HAY STOCK.' });
+            n == 3 && Swal.fire({ icon: 'error', confirmButtonText: 'Ok', text: 'Primero debe seleccionar algun libro para ejecutar su compra.' });
+        })
     }
     compraRealizada = () => {
-        let contenedor = document.getElementById('contenedor-titulo');
-        let p = document.createElement('p');
-        p.id = 'alerta-verde';
-        p.innerText = 'Compra realizada con exito!';
-        contenedor.append(p);
+        Swal.fire({
+            title: 'Compra realiza con exito!',
+            icon: 'success',
+            confirmButtonText: 'Finalizar'
+        });
     }
 
     /************************ALMACENAMIENTO************************/

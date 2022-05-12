@@ -163,4 +163,14 @@
     <td>05/05/2022</td>
     <td>Operadores avanzados</td>
   </tr>
+  </tr>
+    <td>12</td>
+    <td>10/05/2022</td>
+    <td>Librerias</td>
+  </tr>
+  </tr>
+    <td>13</td>
+    <td>12/05/2022</td>
+    <td>Promises & Async</td>
+  </tr>
 </table>

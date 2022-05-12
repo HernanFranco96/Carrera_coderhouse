@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url('../assets/fondo.jpg');
+    background-repeat: repeat;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main{
+    width: 1500px;
+    height: auto;
+    margin-top: 20px;
+    padding: 25px;
+    background-color: rgba(214, 190, 153, 0.9);
+    border-radius: 20px;
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "libros libros precio";
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: auto auto;
+}
+
+#contenedor-titulo{
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#mensaje i{
+    font-weight: bold;
+}
+
+#contenedor-libros{
+    grid-area: libros;
+}
+
+#ul-libros{
+    width: auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.libro{
+    width: 90%;
+    height: auto;
+    padding: 4px;
+    list-style-type: none;
+    margin: 10px 10px;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.libro:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgb(81, 79, 79);
+}
+
+#portada{
+    width: 20%;
+    background-color: red;
+    width: 80px;
+    border-radius: 4px;
+    transition: all 0.5s;   
+    order: -1;
+}
+
+#portada:hover{
+    box-shadow: 2px 2px 4px #6c757d;
+}
+
+#libros{
+    flex: auto;
+}
+
+.titulo, #autor{
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+    transition: all 0.7s;
+}
+
+.titulo:hover{
+    font-size: 19px;
+    border-bottom: 2px solid #6c757d;
+}
+
+#precio, #stock{
+    width: auto;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#portada-comprar{
+    width: 30px;
+    height: 50px;
+}
+
+#contenedor-comprar{
+    height: auto;
+    border: 2px solid black;
+    margin-left: 25px;
+    grid-area: precio;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+#h3-comprar{
+    font-size: 25px;
+    order: 0;
+}
+
+#ul-comprar{
+    height: auto;
+}
+
+#ul-buscar{
+    height: 80%;
+    order: 1;
+}
+
+#ul-comprar{
+    order: 2;
+}
+
+#li-comprar{
+    padding: 4px;
+    list-style-type: none;
+    transition: all 0.5s;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#li-comprar p{
+    padding: 5px;
+    font-size: 15px;
+}
+
+.grupo-botones{
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#btn-comprar, #btn-borrar{
+    padding: 10px;
+    width: 170px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.5s;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(16, 165, 44);
+}
+
+#btn-borrar{
+    background-color:rgb(210, 34, 11);
+    margin-top: 10px;
+}
+
+#btn-comprar:hover{
+    cursor: pointer;
+    background-color: rgb(40, 138, 58);
+}
+
+#btn-borrar:hover{
+    cursor: pointer;
+    background-color:rgb(226, 63, 42);
+}
+
+#total{
+    font-size: 20px;
+    font-weight: bold;
+}
